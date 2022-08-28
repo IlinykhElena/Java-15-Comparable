@@ -13,10 +13,7 @@ public class TicketsManager {
     }
 
     public boolean matchesAirport(Ticket ticket, String from, String to) {
-        if (ticket.getDepartureAirport().contains(from)) {
-            return true;
-        }
-        if (ticket.getArrivalAirport().contains(to)) {
+        if (ticket.getDepartureAirport().contains(from) && ticket.getArrivalAirport().contains(to)) {
             return true;
         } else {
             return false;

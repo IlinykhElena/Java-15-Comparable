@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Objects;
 
 public class Ticket implements Comparable<Ticket> {
@@ -71,7 +69,7 @@ public class Ticket implements Comparable<Ticket> {
     }
 
     @Override
-    public int compareTo(@NotNull Ticket o) {
+    public int compareTo(Ticket o) {
         if (price < o.getPrice()) {
             return -1;
         }
